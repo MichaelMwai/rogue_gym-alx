@@ -296,7 +296,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 40px;
   gap: 40px;
   width: 100%;
 }
@@ -357,6 +356,7 @@
 .subscription {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 40px;
   width: 100%;
 }
@@ -391,4 +391,12 @@ button.subscribe {
   color: #ffffff;
   background: #ff0000;
   border-radius: 5px;
+}
+
+.bottom-links {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
 }
