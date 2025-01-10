@@ -348,8 +348,47 @@
   color: white;
   padding: 10px 20px;
   border: none;
-  width: auto;
+  width: 160px;
   border-radius: 2px;
   background: #ff0000;
   transition: ease-in 0.1s;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.newsletter h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  background: #ffffff;
+  color: #000000;
+}
+
+button.subscribe {
+  padding: 10px;
+  border: none;
+  width: 100px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #ff0000;
+  border-radius: 5px;
 }
