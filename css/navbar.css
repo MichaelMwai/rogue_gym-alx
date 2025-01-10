@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+.header-logo {
+  width: 40px;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header .navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.header .navbar ul li {
+  margin: 0 0.5rem;
+}
+
+.header .navbar ul li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .navbar ul li a:hover {
+  color: #ccc;
+}
+
+.navigation {
+  display: flex;
+}
+
+.header .fa-bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+
+.header .fa-bars:hover {
+  color: red;
+}
+
+/* Style the side panel */
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-panel.active {
+  left: 0; /* Slide in */
+}
+
+/* Side panel links */
+.side-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-panel ul li {
+  margin-bottom: 2rem;
+}
+
+.side-panel ul li a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.side-panel ul li a:hover {
+  color: #ccc;
+}
+
+/* Close button */
+.close-btn {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: red;
+}
+
+/* Add a background overlay when the panel is active */
+body::after {
+  content: "";
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+
+.side-panel.active ~ body::after {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navigation.left {
+    display: none;
+  }
+
+  .header .fa-bars {
+    display: block;
+  }
+}

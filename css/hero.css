@@ -1,0 +1,355 @@
+.hero {
+  margin-top: 70px;
+}
+
+.main-banner {
+  display: flex;
+  width: 100%;
+  height: 760px;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: white;
+  background-color: #ff0000;
+}
+
+.hero-image img {
+  position: relative;
+  top: -10%;
+  width: 100%; /* Set the image width to 100% to cover the container */
+}
+
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  margin-left: 60px;
+  position: absolute;
+}
+
+.banner-title h1 {
+  font-family: "Changa One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: white;
+}
+
+.banner-subtitle h2 {
+  font-size: 16px;
+  color: white;
+}
+
+.banner-btn button {
+  font-weight: 500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  background: #ff0000;
+  transition: ease-in 0.1s;
+}
+
+.banner-btn button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 40px;
+  color: white;
+}
+
+.welcome-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.welcome-section h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.qualities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.qualities-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 305px;
+  min-height: 380px;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.qualities-card:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.qualities-card img {
+  width: 50px;
+}
+
+.qualities-card h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.qualities-card p {
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .qualities {
+    flex-wrap: wrap;
+  }
+
+  .qualities-card {
+    flex: 1 1 calc(50% - 1rem); /* Cards now take up 50% width in two rows */
+  }
+
+  .hero-image img {
+    position: relative;
+    width: 150%;
+    top: 0%;
+    left: 0%;
+    transform: none;
+    object-fit: cover;
+  }
+}
+
+/*VIDEO ADVERTISMENT*/
+
+.video-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.video-ad iframe {
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: none;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.testimonial-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.testimonial-about h1 {
+  font-family: "Changa One", serif;
+  text-align: left;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+}
+
+.testimonial-about p {
+  font-size: 16px;
+  color: white;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.testimonial-slideshow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  min-height: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+/* FITNESS SECTION */
+
+.fitness {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.fitness-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 60px;
+  width: 100%;
+}
+
+.fitness-intro h1 {
+  font-family: "Changa One", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  width: 40%;
+}
+
+.fitness-intro p {
+  font-size: 24px;
+  color: white;
+  line-height: 20px;
+  width: 40%;
+}
+
+.coaches {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 40px;
+  gap: 40px;
+  width: 100%;
+}
+
+.coaches-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.coaches-images .small {
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.coaches-images .large {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.coaches-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coaches-info h1 {
+  font-family: "Changa One", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+}
+
+.coaches-info h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.coaches-info p {
+  font-size: 24px;
+  color: white;
+  line-height: 20px;
+}
+
+.coaches-info button {
+  font-weight: 500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: auto;
+  border-radius: 2px;
+  background: #ff0000;
+  transition: ease-in 0.1s;
+}
