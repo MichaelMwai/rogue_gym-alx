@@ -507,6 +507,23 @@ Blog Section */
   width: 100%;
 }
 
+.blog-content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.blog-content h2 {
+  font-family: "Changa One", serif;
+  font-size: 24px;
+  color: white;
+}
+
+.blog-content p {
+  font-size: 18px;
+  color: white;
+}
+
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -522,8 +539,6 @@ Blog Section */
 .blog-card .blog-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
 }
 
 .blog-card img {
@@ -546,7 +561,7 @@ Blog Section */
   line-height: 20px;
 }
 
-.blog-card .upload-details {
+.upload-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
