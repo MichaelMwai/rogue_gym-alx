@@ -592,3 +592,26 @@ Blog Section */
   color: white;
   font-size: 10px;
 }
+
+/* fullblog templates */
+
+.blog-article p {
+  font-size: 20px;
+  color: white;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.blog-article h2 {
+  font-family: "Changa One", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.blog-article h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
