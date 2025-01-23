@@ -119,21 +119,30 @@
 
 
   <!-- NEWSLETTER SECTION -->
-   <section class="subscription">
-    <div class="newsletter">
-      <h1>WE WOULD LIKE TO HEAR FROM YOU</h1>
-      <p>Subscribe to our newsletter for exclusive offers and updates</p>
-      <form>
-        <input type="email" placeholder="Enter your email address" required>
-        <button class="subscribe" type="submit">Subscribe</button>
-      </form>
-      <p>Subscribe to our newsletter for exclusive offers and updates</p>
-    </div>
-    <div class="map"></div>
-      <h1>FIND US ON THE MAP</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6340059991117!2d36.75042057459968!3d-1.39606393575516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0595a5d97995%3A0xd3468d2f401ecbaa!2sRogue%20Gym%20Rongai!5e0!3m2!1sen!2ske!4v1737618801289!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-   </section>
+<section class="subscription">
+  <div class="newsletter">
+    <h1>WE WOULD LIKE TO HEAR FROM YOU</h1>
+    <p>Subscribe to our newsletter for exclusive offers and updates</p>
+    <form id="subscriptionForm">
+      <input type="email" id="email" placeholder="Enter your email address" required>
+      <button id="subscribeBtn" class="subscribe" type="submit">Subscribe</button>
+    </form>
+  </div>
+  <div class="map">
+    <h1>FIND US ON THE MAP</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6340059991117!2d36.75042057459968!3d-1.39606393575516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0595a5d97995%3A0xd3468d2f401ecbaa!2sRogue%20Gym%20Rongai!5e0!3m2!1sen!2ske!4v1737618801289!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- SUBSCRIPTION SUCCESS POP-UP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <img src="images/rouge_gym_black.png" alt="Rogue Gym Logo">
+    <p id="popupMessage">SUCCESS</p>
+    <p>An email has been sent to <span id="popupEmail"></span>.</p>
+    <button id="closePopup">Close</button>
+  </div>
+</div>
 
    <!-- QUICK LINKS -->
     <section class="bottom-links">
