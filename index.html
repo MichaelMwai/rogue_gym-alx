@@ -16,6 +16,33 @@
 </head>
 
 <body>
+
+<!-- WELCOME ON LOAD -->
+
+<div id="welcomeScreen" class="welcome-screen">
+  <div class="welcome-content">
+    <!-- <img
+      src="images/rouge_gym_white.png"
+      alt="rongai-logo"
+      srcset="Gyms Logo"
+    /> -->
+    <h1>Strong today, even stronger tomorrow</h1>
+    <p>Our upcoming challenge</p>
+
+    <!-- Announcement Section -->
+    <div id="announcement" class="announcement">
+      <img
+        src="images/current_announcement.jpg"
+        alt="upcoming-challenges"
+        srcset=""
+      />
+    </div>
+
+    <button id="enterButton" class="enter-btn">Enter</button>
+  </div>
+</div>
+
+
   <!-- header -->
   <header class="header">
     <nav class="navbar">
@@ -60,14 +87,14 @@
     <!-- Main Slideshow 1 -->
     <div class="main-banner mySlides fade">
       <div class="hero-image">
-        <img src="images/hero_image.jpg" alt="hero" />
+        <img src="images/gym_floor.jpeg" alt="hero" />
       </div>
       <div class="banner-info">
         <div class="banner-logo">
           <img src="images/rouge_gym_white.png" alt="" />
         </div>
         <div class="banner-title">
-          <h1>Welcome to rougue gym - your strength, our mission.</h1>
+          <h1>Welcome to rogue gym - your strength, our mission.</h1>
         </div>
         <div class="banner-subtitle">
           <h2>
@@ -265,10 +292,10 @@
             <li>Gym Access</li>
             <li>No Group Classes</li>
           </ul>
-          <button>Sign Up</button>
+          <button class="subscribe">Sign Up</button>
         </div>
       </div>
-      <div class="plan">
+      <div class="plan plan-monthly">
          <p>Most Purchased</p>
         <div class="plans-details">
           <p>Monthly</p>
@@ -278,10 +305,10 @@
             <li>Full Gym Access</li>
             <li>All Group Classes</li>
           </ul>
-          <button>Sign Up</button>
+          <button class="subscribe">Sign Up</button>
         </div>
       </div>
-      <div class="plan">
+      <div class="plan plan-yearly">
          <p>Best Value</p>
         <div class="plans-details">
           <p>YEARLY</p>
@@ -289,9 +316,9 @@
           <ul>
             <li>1 Year Access</li>
             <li>Full Gym Access</li>
-            <li>All Group Classes and Activity Discounts</li>
+            <li>Gym Activity Discounts</li>
           </ul>
-          <button>Sign Up</button>
+          <button class="subscribe">Sign Up</button>
           </div>
       </div>
     </div>
@@ -309,7 +336,6 @@
     </form>
   </div>
   <div class="map">
-    <h1>FIND US ON THE MAP</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6340059991117!2d36.75042057459968!3d-1.39606393575516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0595a5d97995%3A0xd3468d2f401ecbaa!2sRogue%20Gym%20Rongai!5e0!3m2!1sen!2ske!4v1737618801289!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
@@ -328,9 +354,11 @@
     <section class="bottom-links">
     <div>
       <img src="images/rouge_gym_black.png" alt="rouge_gym_black">
-      <p>4th Floor Gashwe Plaza</p>
-      <p>Ongata Rongai, Kenya</p>
-      <p>+254 717 123456</p>
+      <ul>
+      <li>4th Floor Gashwe Plaza</li>
+      <li>Ongata Rongai, Kenya</li>
+      <li>+254 717 123456</li>
+    </ul>
     </div>
     <div class="menu">
       <h1>Menu</h1>
@@ -364,7 +392,9 @@
       </div>
       <div class="collaborations">
         <h1>Operational Hours</h1>
-        <p>info@rougue_collabortation.com</p>
+        <ul>
+        <li>info@rougue_collabortation.com</li>
+        </ul>
       </div>
   </div>
   </section>
@@ -374,9 +404,9 @@
     <!-- FOOTER -->
      <section class="footer">
       <div class="social-media">
-         <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-         <a href="#"><img src="images/instagram.png" alt="instagram"></a>
-         <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+         <a href="#"><img src="images/socials/facebook.png" alt="facebook"></a>
+         <a href="#"><img src="images/socials/instagram.png" alt="instagram"></a>
+         <a href="#"><img src="images/socials/youtube.png" alt="you"></a>
        </div>
        <p>�� 2021 Rogue Gym. All rights reserved.</p>
        <ul>
@@ -389,6 +419,7 @@
 
   <script src="navbar.js"></script>
   <script src="hero.js"></script>
+  <script src="welcome.js"></script>
 </body>
 
 </html>

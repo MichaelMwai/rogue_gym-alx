@@ -1,3 +1,94 @@
+/* WELCOME SCREEN */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/gym-floor.jpeg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+/* HIDE WELCOME SCREEN BY DEFAULT */
+.hidden {
+  display: none;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+  padding: 40px 20px;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-content img {
+  width: 250px;
+}
+
+.welcome-content h1 {
+  font-family: "Changa One", serif;
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.announcement img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.enter-btn {
+  background: #ff4500; /* Bright motivational orange */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enter-btn:hover {
+  background: #cc3300; /* Darker motivational orange */
+}
+
+/* HERO SECTION */
 .hero {
   margin-top: 70px;
 }
@@ -40,7 +131,7 @@
 .hero-image img {
   position: relative;
   top: -10%;
-  width: 100%; /* Set the image width to 100% to cover the container */
+  width: 100%;
 }
 
 .banner-info {
@@ -395,6 +486,14 @@
   background: grey;
 }
 
+.plan-monthly {
+  background: #00620a;
+}
+
+.plan-yearly {
+  background: linear-gradient(304.02deg, #ff9900 20.15%, #990000 90.46%);
+}
+
 .plans-details {
   display: flex;
   flex-direction: column;
@@ -421,16 +520,27 @@
   color: black;
 }
 
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
+}
+
 .plans-details ul li {
   list-style-type: none;
   padding: 5px;
+  justify-content: left;
+  text-align: left;
 }
 
 .subscription {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  padding: 0 40px;
+  margin: 40px 0;
   width: 100%;
 }
 
@@ -471,6 +581,26 @@ button.subscribe {
   padding: 20px;
   justify-content: space-between;
   background-color: #ffffff;
+  width: 100%;
+}
+
+.bottom-links ul,
+.bottom-links ul li {
+  list-style-type: none;
+  padding: 5px 0;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #fff;
+  color: #000000;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
