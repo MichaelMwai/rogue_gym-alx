@@ -21,11 +21,6 @@
 
 <div id="welcomeScreen" class="welcome-screen">
   <div class="welcome-content">
-    <!-- <img
-      src="images/rouge_gym_white.png"
-      alt="rongai-logo"
-      srcset="Gyms Logo"
-    /> -->
     <h1>Strong today, even stronger tomorrow</h1>
     <p>Our upcoming challenge</p>
 
@@ -37,8 +32,7 @@
         srcset=""
       />
     </div>
-
-    <button id="enterButton" class="enter-btn">Enter</button>
+    <button id="enterButton" class="enter-btn">Continue to Website</button>
   </div>
 </div>
 
@@ -54,7 +48,7 @@
               srcset="" />
           </li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Membership</a></li>
+          <li><a href="#membership">Membership</a></li>
           <li><a href="#">Classes</a></li>
           <li><a href="#">Trainers</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -155,9 +149,7 @@
         </div>
       </div>
     </div>
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     <div style="text-align: center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
@@ -278,7 +270,7 @@
   </section>
 
 <!-- MEMBERSHIP PRICING -->
-  <section class="membership">
+  <section id="membership" class="membership">
     <h1>OUR MEMBERSHIP PLANS</h1>
     <p>Choose the right membership plan for you</p>
     <div class="plans">
@@ -419,7 +411,9 @@
 
   <script src="navbar.js"></script>
   <script src="hero.js"></script>
+  <script src="subscribe.js"></script>
   <script src="welcome.js"></script>
+
 </body>
 
 </html>
