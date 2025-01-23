@@ -38,3 +38,7 @@ function currentSlide(n) {
   slideIndex = n - 1; // Adjust to match the array index
   showSlides();
 }
+
+//date
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
