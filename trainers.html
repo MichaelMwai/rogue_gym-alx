@@ -18,30 +18,30 @@
 <body>
 
         <!-- header -->
-    <header class="header">
-      <nav class="navbar">
-        <i class="fas fa-bars"></i>
-        <div class="navigation left">
+      <header class="header">
+    <nav class="navbar">
+      <i class="fas fa-bars"></i>
+      <div class="navigation left">
         <ul>
           <li>
-            <a href="index.html" class="logo"></a><img src="images/rouge_gym_white.png" class="header-logo" alt="logo"
+            <a href="#" class="logo"></a><img src="images/rouge_gym_white.png" class="header-logo" alt="logo"
               srcset="" />
           </li>
-          
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="trainers.html">Trainers</a></li>
-            <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
-        <div class="navigation right">
-          <ul>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Join</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <div class="navigation right">
+  
+      <span id="username-placeholder" class="username-placeholder"></span>
+      <button id="loginBtn" class="enter-btn">Log In</button>
+    
+</div>
+    </nav>
+  </header>
 
     <!-- Pop up side panel -->
     <div class="side-panel">
@@ -88,6 +88,7 @@
 
 
 
+ 
   <!-- NEWSLETTER SECTION -->
 <section class="subscription">
   <div class="newsletter">
@@ -126,20 +127,19 @@
     <div class="menu">
       <h1>Menu</h1>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Membership</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="membership.html">Membership</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">Classes</a></li>
+        <li><a href="classes.html">Classes</a></li>
       </ul>
     </div>
     <div class="quick-links">
       <h1>Quick Links</h1>
       <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#loginBtn">Login</a></li>
+        <li><a  class="sign-up-btn" href="">Register</a></li>
+        <li><a  href="">Contact Us</a></li>
       </ul>
     </div>
 
@@ -150,7 +150,7 @@
           <li>Weekdays: 05:00am - 10:00pm</li>
           <li>Saturday 08:00am - 06:00pm</a></li>
           <li>Sunday: 10:00am - 4:00pm</li>
-          <li>Public Holidays: Communicated</li>
+          <li>Public Holidays: Yearly Members Only</li>
         </ul>
       </div>
       <div class="collaborations">
@@ -162,22 +162,20 @@
   </div>
   </section>
 
-  
-  </div>
     
 
     <!-- FOOTER -->
      <section class="footer">
       <div class="social-media">
-         <a href="#"><img src="images/socials/facebook.png" alt="facebook"></a>
-         <a href="#"><img src="images/socials/instagram.png" alt="instagram"></a>
-         <a href="#"><img src="images/socials/youtube.png" alt="you"></a>
+         <a href="https://www.facebook.com/p/Rogue-Gym-Rongai-100095023415570/?locale=cs_CZ"><img src="images/socials/facebook.png" alt="facebook"></a>
+         <a href="https://www.instagram.com/rogue_gym_rongai/"><img src="images/socials/instagram.png" alt="instagram"></a>
+         <a href="https://www.youtube.com/channel/UCpyj_DSUeqL6gMxjcDqPbRw"><img src="images/socials/youtube.png" alt="you"></a>
        </div>
-       <p>�� 2021 Rogue Gym. All rights reserved.</p>
-       <ul>
-         <li><a href="#">Privacy Policy</a></li>
-         <li><a href="#">Terms and Conditions</a></li>
-       </ul>
+       <p> &copy; <span id="currentYear"></span> Rogue Gym. All rights reserved.</p>
+<script src="scripts/main.js"></script>
+       
+         <p><a href="terms.html">Terms and Conditions</a></p>
+       
        
      </footer>
 
@@ -186,6 +184,8 @@
   <script src="hero.js"></script>
   <script src="subscribe.js"></script>
   <script src="welcome.js"></script>
+  <script src="popup.js"></script>
+  <script src="signup.js"></script>
 
 </body>
 

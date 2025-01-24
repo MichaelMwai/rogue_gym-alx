@@ -21,7 +21,7 @@
 
 
   <!-- header -->
-  <header class="header">
+        <header class="header">
     <nav class="navbar">
       <i class="fas fa-bars"></i>
       <div class="navigation left">
@@ -31,18 +31,18 @@
               srcset="" />
           </li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#membership">Membership</a></li>
+          <li><a href="membership.html">Membership</a></li>
           <li><a href="classes.html">Classes</a></li>
           <li><a href="trainers.html">Trainers</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
       <div class="navigation right">
-        <ul>
-      
-          <button id="log-in" class="enter-btn">Log in</button>
-        </ul>
-      </div>
+  
+      <span id="username-placeholder" class="username-placeholder"></span>
+      <button id="loginBtn" class="enter-btn">Log In</button>
+    
+</div>
     </nav>
   </header>
 
@@ -121,6 +121,7 @@
     </div>
 
 
+ 
   <!-- NEWSLETTER SECTION -->
 <section class="subscription">
   <div class="newsletter">
@@ -169,9 +170,9 @@
     <div class="quick-links">
       <h1>Quick Links</h1>
       <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#loginBtn">Login</a></li>
+        <li><a  class="sign-up-btn" href="">Register</a></li>
+        <li><a  href="">Contact Us</a></li>
       </ul>
     </div>
 
@@ -216,6 +217,8 @@
   <script src="hero.js"></script>
   <script src="subscribe.js"></script>
   <script src="welcome.js"></script>
+  <script src="popup.js"></script>
+  <script src="signup.js"></script>
 
 </body>
 

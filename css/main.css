@@ -69,6 +69,12 @@ body {
   color: #ccc;
 }
 
+.username-placeholder {
+  color: #ccc;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
 .announcement img {
   width: 300px;
   margin-top: 20px;
@@ -407,11 +413,12 @@ body {
 .class-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
-  width: 300px;
-  min-height: 300px;
+  min-width: 300px;
+
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   transition: ease-in-out 0.3s;
 }
@@ -498,7 +505,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -622,6 +629,25 @@ button.subscribe {
   color: #ffffff;
   background: #ff0000;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+button.subscribe:hover {
+  background: #ff3333;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  text-align: center;
+}
+
+.center img {
+  width: 16px;
+  margin-right: 10px;
 }
 
 .bottom-links {
@@ -969,4 +995,132 @@ Blog Section */
 .trainer img:hover {
   transform: scale(1.05);
   filter: grayscale(0%);
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 100px 0;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ff0000; /* Red border */
+  padding: 30px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff0000; /* Red header background */
+  color: #ffffff; /* White text */
+}
+
+td {
+  background-color: #1e1e1e; /* Dark cell background */
+}
+
+td:hover {
+  background-color: #ff0000; /* Red hover effect */
+  color: #ffffff; /* Ensure white text on hover */
+  cursor: pointer;
+}
+
+td.empty,
+th[style] {
+  background-color: #333333; /* Shaded for Sunday or empty cells */
+}
+
+caption {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000; /* Red title text */
+}
+
+/* POP UP */
+.login-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: none;
+}
+
+.login-popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 30px;
+  z-index: 1000;
+  display: none;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: grey;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.popup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+.popup button {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: darkred;
 }

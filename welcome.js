@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     welcomeScreen.classList.add("hidden");
   });
 
-  /* Uncomment this block when ready for production
   // Optional: Add a check for first-time visitors (using localStorage)
   if (!localStorage.getItem("welcomeSeen")) {
     welcomeScreen.classList.remove("hidden");
@@ -15,5 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     welcomeScreen.classList.add("hidden");
   }
-  */
 });
