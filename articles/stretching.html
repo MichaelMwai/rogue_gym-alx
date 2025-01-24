@@ -16,6 +16,9 @@
 </head>
 
 <body>
+
+
+
   <!-- header -->
   <header class="header">
     <nav class="navbar">
@@ -23,50 +26,47 @@
       <div class="navigation left">
         <ul>
           <li>
-            <a href="index.html" class="logo"></a><img src="images/rouge_gym_white.png" class="header-logo" alt="logo"
+            <a href="#" class="logo"></a><img src="images/rouge_gym_white.png" class="header-logo" alt="logo"
               srcset="" />
           </li>
-          
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="trainers.html">Trainers</a></li>
-            <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
       <div class="navigation right">
         <ul>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Join</a></li>
+      
+          <button id="log-in" class="enter-btn">Log in</button>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- Pop up side panel -->
-  <div class="side-panel">
-    <ul>
-      <li><a href="#">Logo</a></li>
-      <li><a href="#">Membership</a></li>
-      <li><a href="#">Classes</a></li>
-      <li><a href="#">Trainers</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </div>
-
   <!-- FULL BLOG -->
 
-  <div class="main-blog">
+  <div class="full-blog">
     <h1>Is Flexibility Important for Men? How Often Should You Stretch?</h1>
     </div>
+    <div class="row">
     <div class="category">
         Health & Fitness
       </div>
+      <div class="category">
+        Men's Health
+      </div>
+      <div class="category">
+        Flexibility
+      </div>
+    </div>
       <div class="upload-details"></div>
-      <p>Author: Samantha Johnson</p>
-      <p>Date: 15/01/2022</p>
+      <p>Samantha Johnson</p>
+      <p>15/01/2022</p>
         </div>
         <div class="main-image">
-            <img src="images/blog_image.jpg" alt="blog_image">
+            <img src="images/blog_posts/man_stretching_large.png" alt="blog_image">
         </div>
         <div class="blog-article">
         <p>
@@ -108,7 +108,7 @@
            For men looking to improve flexibility, consistency is key. Stretch daily, listen to your body, and gradually work on areas where you feel tightness. Over time, you’ll notice better mobility, fewer aches and pains, and improved performance in all aspects of life. So grab a mat, stretch it out, and enjoy the results!
         </p>
         <p>
-          <a href="#">Back to top</a>
+          <a class="link-button" href="#">Back to top</a>
         </p>
         </div>
 
@@ -129,7 +129,6 @@
     </form>
   </div>
   <div class="map">
-    <h1>FIND US ON THE MAP</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6340059991117!2d36.75042057459968!3d-1.39606393575516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0595a5d97995%3A0xd3468d2f401ecbaa!2sRogue%20Gym%20Rongai!5e0!3m2!1sen!2ske!4v1737618801289!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
@@ -148,18 +147,20 @@
     <section class="bottom-links">
     <div>
       <img src="images/rouge_gym_black.png" alt="rouge_gym_black">
-      <p>4th Floor Gashwe Plaza</p>
-      <p>Ongata Rongai, Kenya</p>
-      <p>+254 717 123456</p>
+      <ul>
+      <li>4th Floor Gashwe Plaza</li>
+      <li>Ongata Rongai, Kenya</li>
+      <li>+254 717 123456</li>
+    </ul>
     </div>
     <div class="menu">
       <h1>Menu</h1>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Membership</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="membership.html">Membership</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">Classes</a></li>
+        <li><a href="classes.html">Classes</a></li>
       </ul>
     </div>
     <div class="quick-links">
@@ -168,7 +169,6 @@
         <li><a href="#">Login</a></li>
         <li><a href="#">Register</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
 
@@ -179,12 +179,14 @@
           <li>Weekdays: 05:00am - 10:00pm</li>
           <li>Saturday 08:00am - 06:00pm</a></li>
           <li>Sunday: 10:00am - 4:00pm</li>
-          <li>Public Holidays: Communicated</li>
+          <li>Public Holidays: Yearly Members Only</li>
         </ul>
       </div>
       <div class="collaborations">
         <h1>Operational Hours</h1>
-        <p>info@rougue_collabortation.com</p>
+        <ul>
+        <li>info@rougue_collabortation.com</li>
+        </ul>
       </div>
   </div>
   </section>
@@ -194,21 +196,24 @@
     <!-- FOOTER -->
      <section class="footer">
       <div class="social-media">
-         <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-         <a href="#"><img src="images/instagram.png" alt="instagram"></a>
-         <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+         <a href="https://www.facebook.com/p/Rogue-Gym-Rongai-100095023415570/?locale=cs_CZ"><img src="images/socials/facebook.png" alt="facebook"></a>
+         <a href="https://www.instagram.com/rogue_gym_rongai/"><img src="images/socials/instagram.png" alt="instagram"></a>
+         <a href="https://www.youtube.com/channel/UCpyj_DSUeqL6gMxjcDqPbRw"><img src="images/socials/youtube.png" alt="you"></a>
        </div>
-       <p>�� 2021 Rogue Gym. All rights reserved.</p>
-       <ul>
-         <li><a href="#">Privacy Policy</a></li>
-         <li><a href="#">Terms and Conditions</a></li>
-       </ul>
+       <p> &copy; <span id="currentYear"></span> Rogue Gym. All rights reserved.</p>
+<script src="scripts/main.js"></script>
+       
+         <p><a href="terms.html">Terms and Conditions</a></p>
+       
        
      </footer>
 
 
   <script src="navbar.js"></script>
   <script src="hero.js"></script>
+  <script src="subscribe.js"></script>
+  <script src="welcome.js"></script>
+
 </body>
 
 </html>

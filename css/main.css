@@ -337,7 +337,9 @@ body {
 
 .testimonial-slideshow {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -353,6 +355,11 @@ body {
   transition: ease-in-out 0.3s;
 }
 
+.testimonial-card:hover {
+  background-color: #e9272c;
+  transform: scale(1.05);
+}
+
 /* FITNESS SECTION */
 
 .fitness {
@@ -365,10 +372,9 @@ body {
 
 .fitness-intro {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0 40px;
-  gap: 60px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -377,16 +383,52 @@ body {
   font-size: 48px;
   font-weight: 400;
   color: white;
-  width: 40%;
+  text-align: center;
 }
 
 .fitness-intro p {
   font-size: 24px;
   color: white;
   line-height: 20px;
-  width: 40%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* TRAINERS */
+.class-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.class-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  min-height: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.class-card:hover {
+  background-color: #e9272c;
+  transform: scale(1.05);
+}
+
+.class-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* COACHES */
 .coaches {
   display: flex;
   flex-direction: row;
@@ -416,6 +458,7 @@ body {
 .coaches-info {
   display: flex;
   flex-direction: column;
+  width: 450px;
   gap: 20px;
 }
 
@@ -435,6 +478,7 @@ body {
   font-size: 24px;
   color: white;
   line-height: 20px;
+  text-align: justify;
 }
 
 .coaches-info button {
@@ -786,6 +830,28 @@ Blog Section */
   font-size: 20px;
   color: white;
   line-height: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.full-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 100px;
+  width: auto;
+  color: white;
+}
+
+.full-blog h1 {
+  font-family: "Changa One", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .upload-details {
