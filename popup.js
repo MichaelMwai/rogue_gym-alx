@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const popupHTML = `
-    <div class="login-popup-overlay" id="login-popup-overlay"></div>
-    <div class="login-popup" id="login-popup">
+    <div class="login-popup-overlay" id="login-popup-overlay" style="display: none;"></div>
+    <div class="login-popup" id="login-popup" style="display: none;">
       <span class="close" id="close-login-popup">&times;</span>
       <img src="images/rouge_gym_black.png" alt="Rogue Gym Logo">
       <h2>Welcome Back</h2>
@@ -13,12 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <input type="password" id="password" placeholder="Enter your password" required>
         <button type="submit" class="enter-btn">Log In</button>
         <p class="center"> <img src="images/google.png" alt="Rogue Gym Logo"> Sign in with Google</p>
-
-        <p class="center">Need an account? <a href="mailto:roguegym@contact.info?subject=Sign%20Up%20Request&body=Hi%20there!%20I%20would%20like%20to%20sign%20up%20for%20your%20gym."> Contact us</a></p>
+        <p class="center">Need an account? 
+          <a href="mailto:roguegym@contact.info?subject=Sign%20Up%20Request&body=Hi%20there!%20I%20would%20like%20to%20sign%20up%20for%20your%20gym.">
+            Contact us
+          </a>
+        </p>
       </form>
     </div>
   `;
-  document.body.insertAdjacentHTML("beforeend", popupHTML); // Append to the body
+  document.body.insertAdjacentHTML("beforeend", popupHTML); // Append popup to the body
 
   // Elements
   const loginBtn = document.getElementById("loginBtn");
@@ -35,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginBtn.textContent = "Log Out";
   }
 
+  // Handle login button click
   loginBtn.addEventListener("click", () => {
     if (loginBtn.textContent === "Log In") {
       overlay.style.display = "block";
@@ -59,11 +63,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Form Submit
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const username = document.getElementById("username").value;
-    if (username.trim()) {
-      usernameSpan.textContent = username;
-      loginBtn.textContent = "Log Out";
-      closeLoginPopup();
+    const username = document.getElementById("username").value.trim();
+    if (username) {
+      localStorage.setItem("username", username); // Save to local storage
+      usernameSpan.textContent = username; // Update username display
+      loginBtn.textContent = "Log Out"; // Update login button
+      closeLoginPopup(); // Close popup
     }
   });
 });
