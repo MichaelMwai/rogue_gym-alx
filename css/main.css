@@ -9,6 +9,31 @@
   text-decoration: none;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -142,6 +167,7 @@ body {
   position: relative;
   top: -10%;
   width: 100%;
+  filter: brightness(70%);
 }
 
 .banner-info {
@@ -240,6 +266,9 @@ body {
   width: 100%;
   gap: 20px;
   padding: 20px;
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .qualities-card {
@@ -344,9 +373,11 @@ body {
 .testimonial-slideshow {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 20px;
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .testimonial-card {
@@ -363,6 +394,7 @@ body {
 
 .testimonial-card:hover {
   background-color: #e9272c;
+  color: white;
   transform: scale(1.05);
 }
 
@@ -424,7 +456,6 @@ body {
 }
 
 .class-card:hover {
-  background-color: #e9272c;
   transform: scale(1.05);
 }
 
@@ -485,7 +516,6 @@ body {
   font-size: 24px;
   color: white;
   line-height: 20px;
-  text-align: justify;
 }
 
 .coaches-info button {
@@ -529,6 +559,9 @@ body {
   justify-content: center;
   gap: 20px;
   width: 100%;
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .plan {
@@ -539,6 +572,11 @@ body {
   width: 400px;
   border-radius: 10px;
   background: grey;
+  transition: ease-in-out 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.02);
 }
 
 .plan-monthly {
@@ -547,6 +585,7 @@ body {
 
 .plan-yearly {
   background: linear-gradient(304.02deg, #ff9900 20.15%, #990000 90.46%);
+  animation: pulse 2s infinite;
 }
 
 .plans-details {
