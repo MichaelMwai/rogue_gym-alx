@@ -1039,11 +1039,11 @@ Blog Section */
 }
 
 .category {
-  border: green 2px solid;
+  border: yellow 2px solid;
   border-radius: 10px;
   padding: 5px 5px;
   width: max-content;
-  color: green;
+  color: yellowgreen;
   font-size: 10px;
 }
 
