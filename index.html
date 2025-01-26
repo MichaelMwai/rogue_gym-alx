@@ -54,12 +54,18 @@
           <li><a href="trainers.html">Trainers</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
+          <!-- <button id="themeToggle" class="enter-btn">Switch Theme</button> -->
         </ul>
       </div>
       <div class="navigation right">
   
       <span id="username-placeholder" class="username-placeholder"></span>
       <button id="loginBtn" class="enter-btn">Log In</button>
+      <label class="theme-switch">
+    <input type="checkbox" id="themeToggle" />
+    <span class="slider"></span>
+  </label>
+      
     
 </div>
     </nav>
@@ -198,6 +204,7 @@
   <div class="video-ad">
     <iframe src="https://drive.google.com/file/d/1tn0DTpZUY-Eleeqi84Us6CCgXezT_puz/preview" width="640" height="480"
       autoplay muted></iframe>
+     
   </div>
 
   <!-- TESTIMONIAL section -->
@@ -323,9 +330,9 @@
           <p>Daily</p>
           <h1>350ksh</h1>
           <ul>
-            <li>1 Day Access</li>
-            <li>Gym Access</li>
-            <li>No Group Classes</li>
+            <li><img src="images/checked.png" alt="tick">1 Day Access</li>
+            <li><img src="images/checked.png" alt="tick">Gym Access</li>
+            <li><img src="images/checked.png" alt="tick">No Group Classes</li>
           </ul>
           <button  class="subscribe sign-up-btn">Sign Up</button>
         </div>
@@ -336,9 +343,9 @@
           <p>Monthly</p>
           <h1>4000ksh</h1>
           <ul>
-            <li>1 Month Contract</li>
-            <li>Full Gym Access</li>
-            <li>All Group Classes</li>
+            <li><img src="images/checked.png" alt="tick">1 Month Contract</li>
+            <li><img src="images/checked.png" alt="tick">Full Gym Access</li>
+            <li><img src="images/checked.png" alt="tick">All Group Classes</li>
           </ul>
           <button  class="subscribe sign-up-btn">Sign Up</button>
         </div>
@@ -349,9 +356,9 @@
           <p>YEARLY</p>
           <h1>36000ksh</h1>
           <ul>
-            <li>1 Year Access</li>
-            <li>Full Gym Access</li>
-            <li>Gym Activity Discounts</li>
+            <li><img src="images/checked.png" alt="tick">1 Year Access</li>
+            <li><img src="images/checked.png" alt="tick">Full Gym Access</li>
+            <li><img src="images/checked.png" alt="tick">Gym Activity Discounts</li>
           </ul>
           <button  class="subscribe sign-up-btn">Sign Up</button>
           </div>
@@ -449,7 +456,7 @@
        
      </footer>
 
-
+<script src="toggle_theme.js"></script>
   <script src="navbar.js"></script>
   <script src="hero.js"></script>
   <script src="subscribe.js"></script>

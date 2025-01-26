@@ -9,6 +9,66 @@
   text-decoration: none;
 }
 
+/* Define Theme Variables */
+:root {
+  --primary-color: #ff0000; /* Red */
+  --text-color: white; /* Default text color */
+  --background-color: black; /* Default background */
+  --secondary-color: #ccc; /* For lighter elements like subtitles */
+}
+
+/* Light Theme */
+.light-theme {
+  --text-color: black; /* Black text */
+  --background-color: white; /* White background */
+  --secondary-color: #444; /* Darker subtitle text */
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: red;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -39,7 +99,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .welcome-screen {
@@ -85,17 +145,17 @@ body {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: white;
+  color: var(--text-color);
 }
 
 .welcome-content p {
   font-size: 18px;
   line-height: 1.5;
-  color: #ccc;
+  color: var(--text-color);
 }
 
 .username-placeholder {
-  color: #ccc;
+  color: var(--text-color);
   font-size: 18px;
   padding: 5px 10px;
 }
@@ -329,6 +389,9 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .video-ad iframe {
   padding: 20px;
@@ -389,6 +452,7 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: ease-in-out 0.3s;
 }
 
@@ -420,13 +484,13 @@ body {
   font-family: "Changa One", serif;
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   text-align: center;
 }
 
 .fitness-intro p {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
   line-height: 20px;
   text-align: center;
   margin-bottom: 20px;
@@ -452,6 +516,7 @@ body {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: ease-in-out 0.3s;
 }
 
@@ -504,17 +569,17 @@ body {
   font-family: "Changa One", serif;
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
 }
 
 .coaches-info h2 {
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 .coaches-info p {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
   line-height: 20px;
 }
 
@@ -543,13 +608,13 @@ body {
   font-family: "Changa One", serif;
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
 .membership p {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -572,6 +637,7 @@ body {
   width: 400px;
   border-radius: 10px;
   background: grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: ease-in-out 0.3s;
 }
 
@@ -581,10 +647,12 @@ body {
 
 .plan-monthly {
   background: #00620a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .plan-yearly {
   background: linear-gradient(304.02deg, #ff9900 20.15%, #990000 90.46%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   animation: pulse 2s infinite;
 }
 
@@ -597,6 +665,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   background: #f5f5f5;
+}
+
+.plans-details img {
+  width: 24px;
+  padding-right: 10px;
 }
 
 .plan p {
@@ -633,29 +706,32 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 20px 40px;
   margin: 40px 0;
   width: 100%;
+  color: var(--text-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .newsletter h1 {
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
 .newsletter p {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
 .newsletter input[type="email"] {
   width: 250px;
   padding: 10px 20px;
+  border: 1px solid #000000;
   border-radius: 2px;
-  border: none;
+
   background: #ffffff;
   color: #000000;
 }
@@ -828,17 +904,18 @@ Blog Section */
 
 .blog-content img {
   width: 400px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
 .blog-content h2 {
   font-size: 48px;
-  color: white;
+  color: var(--text-color);
 }
 
 .blog-content p {
   font-size: 32px;
-  color: white;
+  color: var(--text-color);
 }
 
 .content-info {
@@ -857,7 +934,7 @@ Blog Section */
 
 .content-info p {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
 }
 
 .blog-card {
@@ -908,20 +985,36 @@ Blog Section */
   gap: 20px;
   margin-top: 100px;
   width: auto;
-  color: white;
+  color: var(--text-color);
 }
 
 .full-blog h1 {
   font-family: "Changa One", serif;
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
+}
+
+.main-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.main-image img {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .upload-details {
   display: flex;
   justify-content: space-between;
+  color: var(--text-color);
   align-items: center;
   gap: 10px;
 }
@@ -946,11 +1039,11 @@ Blog Section */
 }
 
 .category {
-  border: #f5f5f5 3px solid;
-  border-radius: 30px;
+  border: green 2px solid;
+  border-radius: 10px;
   padding: 5px 5px;
   width: max-content;
-  color: white;
+  color: green;
   font-size: 10px;
 }
 
@@ -992,17 +1085,17 @@ Blog Section */
   font-family: "Changa One", serif;
   font-size: 48px;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
 .trainers h3 {
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
 }
 .the-trainers {
   display: flex;
-  color: white;
+  color: var(--text-color);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1168,7 +1261,7 @@ caption {
   max-width: 1200px;
   margin: 100px auto 0;
   padding: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 h1,
@@ -1190,7 +1283,7 @@ h3 {
   height: 300px;
   background: url("images/rogue-gym-group-class.jpg") no-repeat center
     center/cover;
-  color: white;
+  color: var(--text-color);
 }
 
 .mission,

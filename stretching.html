@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Blog Page - Rogue Gym</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
-" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Rouge Gym - Blogs</title>
-</head>
-
-<body>
-
-
-
-  <!-- header -->
-        <header class="header">
+  <body>
+    <!-- header -->
+          <header class="header">
     <nav class="navbar">
       <i class="fas fa-bars"></i>
       <div class="navigation left">
@@ -41,7 +43,13 @@
   
       <span id="username-placeholder" class="username-placeholder"></span>
       <button id="loginBtn" class="enter-btn">Log In</button>
-    
+    <label class="theme-switch">
+    <input type="checkbox" id="themeToggle" />
+    <span class="slider"></span>
+  </label>
+</div>
+    </nav>
+  </header>
 </div>
     </nav>
   </header>
@@ -209,7 +217,7 @@
        
      </footer>
 
-
+<script src="toggle_theme.js"></script>
   <script src="navbar.js"></script>
   <script src="hero.js"></script>
   <script src="subscribe.js"></script>

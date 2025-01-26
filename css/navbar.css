@@ -46,6 +46,12 @@
   display: flex;
 }
 
+.navigation.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .header .fa-bars {
   color: #fff;
   cursor: pointer;
